@@ -16,7 +16,7 @@
             <p>Группа компаний Оникс профессионал на рынке строительства Перми. За плечами годы успешного опыта в сфере коммерческой недвижимости. Строительным подразделением группы, начиная с 2011 года, успешно реализовано более 10-ти  проектов зданий различного назначения, в том числе под обязательным Государственным строительным  надзором. ГК Оникс – многопрофильная, широко диверсифицированная группа коммерческих предприятий, успешно реализующих проекты в различных областях деятельности на территории г. Перми, что говорит о ее финансовой устойчивости и запасе прочности, необходимых для успешной профессиональной деятельности на рынке жилого строительства.</p>
         </div>
         <div>
-            <img src="img/office.jpg" alt="">
+            <img src="img/office2.jpg" alt="">
         </div>
     </div>
 </section>
@@ -143,20 +143,43 @@
         <div class="icons">
             <div class="icons__item">
                 <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-house"></use></svg>
-                <p>надежно</p>
-                <span>Денежные средства на <br> счетах эскроу застрахованы <br> АСВ в размере до 10 млн. руб.</span>
+                <div>
+                    <p>надежно</p>
+                    <span>Денежные средства на <br> счетах эскроу застрахованы <br> АСВ в размере до 10 млн. руб.</span>
+                </div>
             </div>
             <div class="icons__item">
                 <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-security"></use></svg>
-                <p>безопасно</p>
-                <span>Денежные средства <br> перечисляются застройщику <br> после ввода дома в эксплуатацию </span>
+                <div>
+                    <p>безопасно</p>
+                    <span>Денежные средства <br> перечисляются застройщику <br> после ввода дома в эксплуатацию </span>
+                </div>
             </div>
             <div class="icons__item">
                 <svg class="icon"><use xlink:href="img/symbol-defs.svg#icon-free"></use></svg>
-                <p>доступно</p>
-                <span>Банк не взымает вознаграждение <br> с покупателя за открытие <br> и сопровождение счета</span>
+                <div>
+                    <p>доступно</p>
+                    <span>Банк не взымает вознаграждение <br> с покупателя за открытие <br> и сопровождение счета</span>
+                </div>
             </div>
         </div>
+        <form action="">
+            <div>
+                <p>Ипотечный калькулятор</p>
+                <div class="form__body">
+                    <input type="text" placeholder="Стоимость, руб.">
+                    <div class="form-group">
+                        <input type="text" placeholder="Срок, лет">
+                        <input type="text" placeholder="Ставка, %">
+                    </div>
+                    <input type="text" placeholder="Первоначальный взнос, руб.">
+                </div>
+            </div>
+            <div class="right">
+                <span>Процентные ставки, сумма ежемесячного платежаприведены справочно. Данная информация не является рекламой какого-либо ипотечного кредита или финансового учреждения. Для уточнения условий кредита, процентных ставок, других условий для получения подробной информации о кредите необходимо обратится в офис финансового учреждения, предоставляющего кредиты на приобретение недвижимости.</span>
+                <button type="submit" class="btn">Подать заявку</button>
+            </div>
+        </form>
     </div>
 </section>
 
@@ -165,48 +188,87 @@
         <h2 class="right"><span>Наши объекты</span></h2>
         <div class="divider right"></div>
 
-        <div class="flex">
-            <div class="object">
-                <div class="object__image" style="background-image: url('img/house.jpg')"><span class="object__cat">строящийся</span></div>
-                <div class="object__info">
-                    <div class="object__top">
-                        <span class="type">Комфорт</span>
-                        <span>от 46 550 за м<sup>2</sup></span>
+        <div class="flex swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="object">
+                        <div class="object__image" style="background-image: url('img/house.jpg')"><span class="object__cat">строящийся</span></div>
+                        <div class="object__info">
+                            <div class="object__top">
+                                <span class="type">Комфорт</span>
+                                <span>от 46 550 за м<sup>2</sup></span>
+                            </div>
+                            <p class="object__name">Дом Дядя Стёпа</p>
+                            <p class="object__addr">ул. Буксирная, 10 (м/р-н Водники) <br> Сроки строительства: 2 кв. 2019 - 3 кв. 2021</p>
+                            <p class="object__price"><span>Студии от 20,7 м2</span><span>1 044 763 руб.</span></p>
+                            <p class="object__price"><span>1 комнатные от 34,5 м2</span><span>1 620 624 руб.</span></p>
+                            <p class="object__price"><span> 2 комнатные от 40, 5 м2 </span><span>1 887 603 руб.</span></p>
+                            <p class="object__price"><span>3 комнатные от 54,4 м2</span><span>2 482 920 руб.</span></p>
+                            <p class="object__desc">Современный проект дома, который расположен в “зеленом районе” с отличной инфраструктурой и отвечает всем стандартам качества комфортной жизни. </p>
+                            <div class="object__bottom">
+                                <span><strong>Описание</strong></span>
+                                <a href="javascript:void(0)" class="btn">Выбрать квартиру</a>
+                            </div>
+                            <p class="object__model">Архиткетурная модель здания без учета окружающей застройки и прилегающего к зданию рельефа с элементами художественного вымысла.</p>
+                        </div>
                     </div>
-                    <p class="object__name">Дом Дядя Стёпа</p>
-                    <p class="object__addr">ул. Буксирная, 10 (м/р-н Водники) <br> Сроки строительства: 2 кв. 2019 - 3 кв. 2021</p>
-                    <p class="object__price"><span>Студии от 20,7 м2</span><span>1 044 763 руб.</span></p>
-                    <p class="object__price"><span>1 комнатные от 34,5 м2</span><span>1 620 624 руб.</span></p>
-                    <p class="object__price"><span> 2 комнатные от 40, 5 м2 </span><span>1 887 603 руб.</span></p>
-                    <p class="object__price"><span>3 комнатные от 54,4 м2</span><span>2 482 920 руб.</span></p>
-                    <p class="object__desc">Современный проект дома, который расположен в “зеленом районе” с отличной инфраструктурой и отвечает всем стандартам качества комфортной жизни. </p>
-                    <div class="object__bottom">
-                        <span><strong>Описание</strong></span>
-                        <a href="javascript:void(0)" class="btn">Выбрать квартиру</a>
+        
+                    <div class="object">
+                        <div class="object__image" style="background-image: url('img/placeholder.jpg')"><span class="object__cat">ПЕРСПЕКТИВНЫЙ</span></div>
+                        <div class="object__info">
+                            <p class="object__name">Жилой дом</p>
+                            <p class="object__addr">мкр. Нагорный</p>
+                            <p class="object__desc">Проект разрабатывается совместно с ведущей архитектурной компанией “N”. <br>
+                                    Старт продаж намечен на 2019 год.</p>
+                        </div>
                     </div>
-                    <p class="object__model">Архиткетурная модель здания без учета окружающей застройки и прилегающего к зданию рельефа с элементами художественного вымысла.</p>
+        
+                    <div class="object">
+                        <div class="object__image" style="background-image: url('img/house2.png')"><span class="object__cat">Завершенный</span></div>
+                        <div class="object__info">
+                            <p class="object__name">Офисное здание</p>
+                            <p class="object__addr">мкр. Водники</p>
+                            <p class="object__desc">Сроки строительства 2014-2015 гг.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="object">
+                        <div class="object__image" style="background-image: url('img/house3.png')"><span class="object__cat">Завершенный</span></div>
+                        <div class="object__info">
+                            <p class="object__name">ТЦ «Браво»</p>
+                            <p class="object__addr">мкр. Водники</p>
+                            <p class="object__desc">Сроки строительства 2014-2015 гг. <br>
+                                Площадь <br>
+                                Технология строительства</p>
+                        </div>
+                    </div>
+        
+                    <div class="object">
+                        <div class="object__image" style="background-image: url('img/house5.png')"><span class="object__cat">Завершенный</span></div>
+                        <div class="object__info">
+                            <p class="object__name">ТЦ «Браво-2»</p>
+                            <p class="object__addr">мкр. Водники</p>
+                            <p class="object__desc">Сроки строительства 2014-2015 гг. <br>
+                                    Площадь <br>
+                                    Технология строительства</p>
+                        </div>
+                    </div>
+        
+                    <div class="object">
+                        <div class="object__image" style="background-image: url('img/house4.png')"><span class="object__cat">Завершенный</span></div>
+                        <div class="object__info">
+                            <p class="object__name">Автосалон «KIA»</p>
+                            <p class="object__addr">мкр. Камская долина</p>
+                            <p class="object__desc">Сроки строительства 2014-2015 гг. <br>
+                                Площадь <br>
+                                Технология строительства</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div class="object">
-                <div class="object__image" style="background-image: url('img/placeholder.jpg')"><span class="object__cat">ПЕРСПЕКТИВНЫЙ</span></div>
-                <div class="object__info">
-                    <p class="object__name">Жилой дом</p>
-                    <p class="object__addr">мкр. Нагорный</p>
-                    <p class="object__desc">Проект разрабатывается совместно с ведущей архитектурной компанией “N”. <br>
-                            Старт продаж намечен на 2019 год.</p>
-                </div>
-            </div>
-
-            <div class="object">
-                <div class="object__image" style="background-image: url('img/placeholder.jpg')"><span class="object__cat">ПЕРСПЕКТИВНЫЙ</span></div>
-                <div class="object__info">
-                    <p class="object__name">Жилой дом</p>
-                    <p class="object__addr">мкр. Нагорный</p>
-                    <p class="object__desc">Проект разрабатывается совместно с ведущей архитектурной компанией “N”. <br>
-                        Старт продаж намечен на 2019 год.</p>
-                </div>
-            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
     </div>
 </section>
@@ -271,6 +333,112 @@
         </div>
     </div>
 </section>
+
+<div class="modals">
+    <div class="modal" style="width: 555px; display: none" data-modal="trade">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на Trade-in</p>
+        <p>Оставьте свои контакты и в ближайшее время с вами свяжется наш специалист</p>
+        <form method="POST" onsubmit="" action="form.php" class="request__form">
+            <div class="form-group">
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" required>
+                <label for="">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <input type="hidden" name="hide" value="request">
+            <div class="form-group">
+                <input type="checkbox" checked id="check">
+                <label for="check">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" style="width: 555px; display: none" data-modal="mortage">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на ипотеку</p>
+        <p>Оставьте свои контакты и в ближайшее время с вами свяжется наш специалист</p>
+        <form method="POST" onsubmit="" action="form.php" class="request__form">
+            <div class="form-group">
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" required>
+                <label for="">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <input type="hidden" name="hide" value="request">
+            <div class="form-group">
+                <input type="checkbox" checked id="check">
+                <label for="check">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" style="width: 555px; display: none" data-modal="intell">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на рассрочку</p>
+        <p>Оставьте свои контакты и в ближайшее время с вами свяжется наш специалист</p>
+        <form method="POST" onsubmit="" action="form.php" class="request__form">
+            <div class="form-group">
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" required>
+                <label for="">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <input type="hidden" name="hide" value="request">
+            <div class="form-group">
+                <input type="checkbox" checked id="check">
+                <label for="check">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+
+    <div class="modal" style="width: 555px; display: none" data-modal="intell">
+        <div class="modal__close"></div>
+        <p class="modal__title">Отправить заявку на покупку <br> с сертификатом</p>
+        <p>Оставьте свои контакты и в ближайшее время с вами свяжется наш специалист</p>
+        <form method="POST" onsubmit="" action="form.php" class="request__form">
+            <div class="form-group">
+                <input type="text" name="name">
+                <label for="">Ваше имя</label>
+            </div>
+            <div class="form-group">
+                <input type="text" name="phone" required>
+                <label for="">Телефон</label>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" required>
+                <label for="">Email</label>
+            </div>
+            <input type="hidden" name="hide" value="request">
+            <div class="form-group">
+                <input type="checkbox" checked id="check">
+                <label for="check">Я согласен с <a href="javascript:void(0)" data-modal="policy">условиями обработки персональных данных</a></label>
+            </div>
+            <button class="btn btn-blue" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
 
 <!-- END CONTENT  -->
 //= template/footer.html

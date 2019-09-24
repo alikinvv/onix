@@ -43,6 +43,22 @@ var technology = new Swiper('.technology .swiper-container', {
       }
 });
 
+var objects = new Swiper('.objects .swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
+var build = new Swiper('.build .swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 0,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    }
+});
+
 $('body').on('click', '.technology .sliders__icon', (e) => {
     $('.technology .sliders__icon').removeClass('active');
     $(e.currentTarget).addClass('active');
@@ -123,4 +139,31 @@ $('body').on('click', '.additions .sliders__icon', (e) => {
     $('.additions .sliders__icon').removeClass('active');
     $(e.currentTarget).addClass('active');
     additions.slideTo($(e.currentTarget).index());
+});
+
+$('body').on('click', 'a[data-modal], div[data-modal]:not(.modal)', (e) => {
+    $('.modal').removeClass('active');
+    $('.modals').addClass('active');
+    $('.modal[data-modal="' + $(e.currentTarget).attr('data-modal') + '"]').addClass('active');
+});
+
+$('body').on('click', '.modal__close', () => {
+    $('.modals').removeClass('active');
+    $('.modal').removeClass('active');
+});
+
+$('body').on('click', '.modal[data-modal="success"] .btn', () => {
+    $('.modals').removeClass('active');
+    $('.modal').removeClass('active');
+});
+
+$('body').on('click', '.modals', (e) => {
+    if ($(e.target).is('.modals')) {
+        $('.modals').removeClass('active');
+        $('.modal').removeClass('active');
+    }
+});
+
+$('body').on('click', '.partners__item', (e) => {
+    $(e.currentTarget).next().slideToggle();
 });
